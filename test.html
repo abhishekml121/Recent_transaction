@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    By Abhishek kamal
+    Friday, 29 july 2019
+-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test1 - part 1 (Template design)</title>
+    <link rel="stylesheet" href="./test1.css">
+</head>
+
+<body>
+    <main>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <div id="full_view">
+                <div id="card">
+                    <div id="card_1">
+                        <p id="card_name">VISA</p>
+                        <div id="chip">
+                            <div id="svg_code_for_chip">
+                               <!--
+                               You can use chip image OR use its svg code, using svg code will better because we can handle (add animations) parts of that svg code
+                               -->
+                               
+                                <!--<img src="./images/chip.svg" alt="chip_image">-->
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 50000 62500" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs><style type="text/css">
+   
+    .fil0 {fill:black;fill-rule:nonzero}
+   
+  </style></defs><g><path class="fil0" d="M6101.69 2363.03l37796.62 0c2057.06,0 3738.66,1681.6 3738.66,3738.66l0 37796.62c0,2057.06 -1681.6,3738.66 -3738.66,3738.66l-37796.62 0c-2057.06,0 -3738.66,-1681.6 -3738.66,-3738.66l0 -37796.62c0,-2057.06 1681.6,-3738.66 3738.66,-3738.66zm25993.69 41065.03l14741.59 0 0 -8680.92 -11160.49 0c-1008.49,0 -2129.81,-141.8 -2746.82,-1034.59l-7842.79 0 0 2653.84 3180.33 3180.33c232.51,232.51 -121.01,586.03 -353.52,353.52l-3076.81 -3076.81 -6920.54 6920.55 9.89 3092.99 13815.64 0 0 -3055.39 -2300.06 -2300.06c-232.51,-232.51 121.01,-586.03 353.52,-353.52l2300.06 2300.06zm14741.4 500l-14594.92 0 0 2908.91 11656.45 0c1603.95,0 2922.33,-1305.35 2938.47,-2908.91zm-29418.02 -38.25l-14255.73 0c0,1620.49 1316.05,2947.16 2938.66,2947.16l11326.5 0 -9.43 -2947.16zm-14255.73 -500l14400.43 0 7023.41 -7023.42 0 -2653.84 -7686.62 0c-617.07,892.8 -1738.25,1034.59 -2746.81,1034.59l-10990.41 0 0 8642.67zm13380.1 -10044.13c273.8,-517.17 342.35,-949.78 353.75,-1533.93l-0.89 -6544.73 -13732.96 0 0 8980.12 10990.41 0c862.63,0 1897.28,-89.09 2389.69,-901.46zm617.3 -133.13l15509.06 0c-221.15,-578.48 -229.4,-983.09 -235.56,-1400.8l0 -6794.73 0 -6861c0,-317.29 -4.89,-616.41 57.8,-934.67l-7857.49 0 0 -2843.6 -3053.83 -3053.83c-232.51,-232.51 121.01,-586.03 353.52,-353.52l2950.31 2950.31 7040.61 -7672.55 0 -3085.13 -13963.45 0 0 3096.41 2588.61 3350.6c232.51,232.51 -121.01,586.03 -353.52,353.52l-2588.62 -3350.6 -14444.84 0 0 9048.44 12098.5 0c1490.55,47.4 2180.39,778.91 2133.67,2370.05l0.79 13780.3c-22.03,430.95 -14.41,822.34 -235.56,1400.8zm7973.81 -18834.78l0 2343.58 7516.12 0c377.51,-814.03 1205.99,-1059.95 2037.23,-1059.95l12149.38 0 0 -9059.71 -14558.6 0 -7144.13 7776.08zm7799.69 10389.25l13903.04 0 0 -8605.62 -12122.92 0c-1453.12,0 -1780.12,630.21 -1780.12,2010.49l0 6595.13zm13903.04 500l-13903.04 0 -0.89 6544.73c37.59,1928.92 937.32,2435.39 2743.44,2435.39l11160.49 0 0 -8980.12zm-43673.94 -500l13732.96 0 0.98 -6742.41c36.52,-1190.41 -392.38,-1810.29 -1635.44,-1863.75l-12098.5 0.54 0 8605.62zm0 -18654.06l14298.37 0 0 -2949.93 -11359.71 0c-1615.46,0 -2938.66,1323.2 -2938.66,2938.66l0 11.27zm29261.82 -2949.93l0 2938.66 14412.12 0 0 0c0,-1615.46 -1323.2,-2938.66 -2938.66,-2938.66l-11473.46 0z"/></g><text x="0" y="50015" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Oleksandr Panasovskyi</text><text x="0" y="50020" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+                                
+                            </div>
+                        </div>
+                        <p id="card_number">
+                            <span>3725</span>
+                            <span>6087</span>
+                            <span>4432</span>
+                            <span>5678</span>
+                        </p>
+                        <div id="card_details">
+                            <div>
+                                <p id="pp1">
+                                    <span id="card_holder">CAEDHOLDER</span>
+
+                                    <span id="card_expires">EXPIRES</span></p>
+
+                                <p id="pp2">
+                                    <span id="card_holder_name">Dimest</span>
+                                    <span id="card_expires_date">09/15</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="card_2"></div>
+                </div>
+
+                <section id="recent_transactions_section">
+                    <div id="just_h">
+                        <p><span id="heading">Recent Transactions</span> <span id="icons"><img src="./images/hor.svg" alt=""></span></p>
+                    </div>
+
+                    <div id="transaction_info">
+                        <div class="company_shadow">
+                            <div class="tr_img">
+                                <img src="./images/starred.png" alt="">
+                            </div>
+                            <div class="align">
+                                <p class="tr_p1">
+                                    <span class="tr_name">Starbucks</span>
+                                    <span class="tr_ammount">-7.00</span></p>
+
+                                <p class="tr_p2">
+                                    <span class="tr_name_at">Coffee</span>
+                                    <span class="tr_date">22 Dec</span></p>
+                            </div>
+
+                        </div>
+                        <div class="company_shadow">
+                            <div class="tr_img">
+                                <img src="./images/nike.png" alt="">
+                            </div>
+                            <div class="align">
+                                <p class="tr_p1">
+                                    <span class="tr_name">Nike (Central Park)</span>
+                                    <span class="tr_ammount">-145.50</span></p>
+
+                                <p class="tr_p2">
+                                    <span class="tr_name_at">Shoes</span>
+                                    <span class="tr_date">21 Dec</span></p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="company_shadow">
+                            <div class="tr_img">
+                                <img src="./images/icecream.jpeg" alt="">
+                            </div>
+                            <div class="align">
+                                <p class="tr_p1">
+                                    <span class="tr_name">Garden bakery</span>
+                                    <span class="tr_ammount">-0.55</span></p>
+
+                                <p class="tr_p2">
+                                    <span class="tr_name_at">Food</span>
+                                    <span class="tr_date">21 Dec</span></p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="company_shadow">
+                            <div class="tr_img">
+                                <img src="./images/lynda.png" alt="">
+                            </div>
+                            <div class="align">
+                                <p class="tr_p1">
+                                    <span class="tr_name">Super flesh</span>
+                                    <span class="tr_ammount">-667</span></p>
+
+                                <p class="tr_p2">
+                                    <span class="tr_name_at">Fitness</span>
+                                    <span class="tr_date">19 Dec</span></p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="company_shadow">
+                            <div class="tr_img">
+                                <img src="./images/avatar-default.png" alt="">
+                            </div>
+                            <div class="align">
+                                <p class="tr_p1">
+                                    <span class="tr_name">Bill Clinton</span>
+                                    <span class="tr_ammount">+200.00</span></p>
+
+                                <p class="tr_p2">
+                                    <span class="tr_name_at">Transfer</span>
+                                    <span class="tr_date">18 Dec</span></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
